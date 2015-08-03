@@ -1,0 +1,6 @@
+﻿Jenkins; http://jenkins.dargon.io/
+Packages; https://packages.dargon.io/
+Reddit; https://www.reddit.com/
+Slack; https://dargondev.slack.com/
+Gmail; https://www.gmail.com/
+Wiki-Dargon; https://wiki.dargon.io/

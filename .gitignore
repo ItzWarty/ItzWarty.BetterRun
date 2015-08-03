@@ -10,6 +10,7 @@
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
+[Rr]eleases/
 x64/
 build/
 bld/
@@ -126,7 +127,7 @@ publish/
 ## TODO: Comment the next line if you want to checkin your
 ## web deploy settings but do note that will include unencrypted
 ## passwords
-#*.pubxml
+*.pubxml
 
 # NuGet Packages Directory
 packages/*
@@ -159,7 +160,6 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
-bower_components/
 
 # RIA/Silverlight projects
 Generated_Code/
@@ -184,7 +184,5 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
-# LightSwitch generated files
-GeneratedArtifacts/
-_Pvt_Extensions/
-ModelManifest.xml
+# Nuget Executables and configuration
+NuGet.exe

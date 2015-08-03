@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="ItzWarty.BetterRun.ListingEntry"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ItzWarty.BetterRun"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="300">
+   <UserControl.Resources>
+      <local:ThimoConverter x:Key="thimoConverter" />
+   </UserControl.Resources>
+   <Grid Name="Grid">
+      <Grid.Style>
+         <Style TargetType="Grid">
+            <Style.Triggers>
+               <DataTrigger Binding="{Binding Selected}" Value="True">
+                  <DataTrigger.Setters>
+                     <Setter Property="Background" Value="DarkGray"></Setter>
+                  </DataTrigger.Setters>
+               </DataTrigger>
+            </Style.Triggers>
+         </Style>
+      </Grid.Style>
+      <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="Auto" />
+         <ColumnDefinition />
+         <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <TextBlock Grid.Column="0" Text=">"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0"/>
+      <Image Grid.Column="0" Source="{Binding DANjEEEEE, Converter={StaticResource thimoConverter }}" Width="16" Margin="8,3,5,3" VerticalAlignment="Center"  />
+      <TextBlock Grid.Column="1" Text="{Binding Textd}" FontFamily="Monospace" FontSize="15" VerticalAlignment="Center" />
+      <TextBlock Grid.Column="2" Text="{Binding Blithee}" FontFamily="Monospace" FontSize="15" VerticalAlignment="Center" Margin="0,0,8,0" />
+   </Grid>
+</UserControl>
