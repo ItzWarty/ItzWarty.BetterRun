@@ -163,7 +163,7 @@ namespace ItzWarty.BetterRun {
    }
 
    public class BashAutocompletionSource : AutocompletionSourceBase {
-      private const string kBashPath = @"C:\Program Files (x86)\Git\bin\sh.exe";
+      private const string kBashPath = @"C:\Program Files\Git\bin\sh.exe";
       private const string kBeginCommandMagic = "deadclysm";
       private const string kEndCommandMagic = "gruenes_schaf";
       private string[] commands;
